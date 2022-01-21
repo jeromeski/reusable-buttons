@@ -1,0 +1,50 @@
+/* =====================
+   FACEBOOK STYLE BUTTON
+   ===================== */
+
+   .facebook-style-btn {
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+  
+  .facebook-style-dark {
+    -moz-box-shadow:    inset 0px 1px 0px 0px #4d73bf;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #4d73bf;
+    box-shadow:         inset 0px 1px 0px 0px #4d73bf;
+    background: #4267b2;
+    border: 1px solid #4267b2;
+    color: #fff;
+    text-shadow: 0 1px 0px #3359a5;
+  }
+  
+    .facebook-style-dark:hover {
+      background: #2b54a7;
+    }
+  
+    .facebook-style-dark:active {
+      background: #1d4698;
+      border-color: #1d4698;
+    }
+  
+  
+  .facebook-style-light {
+    background: #f6f7f9;
+    border: 1px solid #ced0d4;
+    border-radius: 2px;
+    color: #4b4f56;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+  
+    .facebook-style-light:hover {
+      background: #e9ebee;
+    }
+  
+    .facebook-style-light:active {
+      background: #d8dade;
+      border-color: #d8dade;
+    }
+  

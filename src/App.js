@@ -1,3 +1,4 @@
+import { useState } from "react";
 import AnimatedButtonOne from "./components/animated/AnimatedButtonOne";
 import AnimatedButtonTwo from "./components/animated/AnimatedButtonTwo";
 import FbButtonDark from "./components/facebook/FbButtonDark";
@@ -6,15 +7,20 @@ import FancyCircleButton from "./components/fancy/FancyCircleButton";
 import FancySquareButton from "./components/fancy/FancySquareButton";
 import GradientButtonOne from "./components/gradient/GradientButtonOne";
 import GradientButtonTwo from "./components/gradient/GradientButtonTwo";
+import ToggleSwitchOne from "./components/toggle-switch/ToggleSwitchOne";
+import ToggleSwitchTwo from "./components/toggle-switch/ToggleSwitchTwo";
 import "./styles.scss";
 
 export default function App() {
+  const [isOn, setIsOn] = useState(false);
+
   const fancySquareButton = "btn-3d-1";
   const fancyCircleButton = "btn-3d-2";
   const gradientButtonOne = "gradient-button-1";
   const gradientButtonTwo = "gradient-button-2";
   const animatedButtonOne = "animated-button-1";
   const animatedButtonTwo = "animated-button-2";
+
   return (
     <div className="App">
       <div className="container">
@@ -60,6 +66,14 @@ export default function App() {
             <AnimatedButtonTwo styles={animatedButtonTwo}>
               Button Two
             </AnimatedButtonTwo>
+          </div>
+        </div>
+        <div className="row mb-50">
+          <div className="col d-flex flex-end">
+            <ToggleSwitchOne isOn={isOn} setIsOn={setIsOn} />
+          </div>
+          <div className="col d-flex flex-start">
+            <ToggleSwitchTwo value={isOn} setIsOn={setIsOn} />
           </div>
         </div>
       </div>
